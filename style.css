@@ -1,10 +1,17 @@
 body{
+    background: linear-gradient( rgb(56, 14, 208), rgb(78, 137, 215));
     font-family: Arial, sans-serif;
     display: flex;
+    
 }
 .principal{
-    width: 500px;
+    background-color: rgb(246, 244, 241);
+    width: 500px;  
     padding: 20px;
+    border: 2px solid #000000;
+    
+    margin-left: 34%;
+    border-radius: 20px;
 }
 h1{
     color: #000;
@@ -12,8 +19,8 @@ h1{
 .principal h1{
     font-size: 2em;
 }
-
-h2{
-font-size: 24px;
-
+.botao{
+border: 10px;
+border-radius: 10px;
+text-align: center;
 }

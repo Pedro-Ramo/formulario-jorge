@@ -9,7 +9,7 @@
 <body>
 
      <div class="principal">
-        <h1>Formulário de Cadastro</h1>
+        <h1>Cadastro</h1>
         <form action="processa.php" method="POST">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
@@ -24,57 +24,79 @@
             <label for="data_nascimento">Data de Nascimento:</label>
             <input type="date" id="data_nascimento" name="data_nascimento" required>
             <br><br>
-            <label for="Whatsapp">Whatsapp:</label>
-            <input type="tel" id="Whatsapp" name="Whatsapp" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
             <br><br>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <br></br>
-            <label for="RG">RG:</label>
-            <input type="number" id="RG" name="RG" required>
-            <br></br>
-            <label for="Cidade">Cidade:</label>
-            <input type="text" id="Cidade" name="Cidade" required>
-            <br><br>
-             
+            <br>
+            <br>
 
+            <label for="rg">RG:</label>
+            <input type="text" id="rg" name="rg" required>
             <br><br>
-            <label for="Estado">Estado:</label>
-            <select id="Estado" name="Estado" required>
-            <option value="Acre">AC</option>
-            <option value="Alagoas">AL</option>
-            <option value="Amapá">AP</option>
-            <option value="Amazonas">AM</option>
-            <option value="Bahia">BA</option>
-            <option value="Ceara">CE</option>
-            <option value="Distrito Federal">DF</option>
-            <option value="Esperito Santo">ES</option>
-            <option value="Goias">GO</option>
-            <option value="Maranhão">MA</option> 
-            <option value="Matogrosso">MT</option> 
-            <option value="Matosul">MS</option>
-            <option value="Minas gerais">MG</option>
-            <option value="Para">PA</option> 
-            <option value="Parana">PR</option>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            <br>
+            <br>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+            <option value="acre">AC</option>
+            <option value="alagoas">AL</option>
+            <option value="amapa">AP</option>
+            <option value="amazonas">AM</option>
+            <option value="bahia">BA</option>
+            <option value="ceara">CE</option>
+            <option value="distritofederal">DF</option>
+            <option value="espiritosanto">ES</option>
+            <option value="goias">GO</option>
+            <option value="maranhao">MA</option>
+            <option value="matogrosso">MT</option>
+            <option value="matogrossosul">MS</option>
+            <option value="minasgerais">MG</option>
+            <option value="para">PA</option>
+            <option value="paraiba">PB</option>
+            <option value="parana">PR</option>
             </select>
-            <label for="CEP">CEP:</label>
-            <input type="text" id="CEP" name="CEP" required>
 
-            <br><br>
-             
+            
+            <label for="cep">CEP:</label>
+            <input type="number" id="cep" name="cep" required>
+       <hr></hr>
+       <h2>Pesquisa</h2>
+       <h3>Você tem geladeira em casa?</h3>
+       
+       <input type="radio" name="alternativa1" value="sim" id="sim">
+<label for="sim">Sim</label>
 
+<input type="radio" name="alternativa1" value="nao" id="nao">
+<label for="nao">Não</label>
+<br>
+<br>
+<h3>Você tem Tv?</h3>
+       
+<input type="radio" name="alternativa2" value="sim" id="sim">
+<label for="sim">Sim</label>
 
+<input type="radio" name="alternativa2" value="nao" id="nao">
+<label for="nao">Não</label>
+<br>
+<br>
 
-
-        <hr></hr>
-        <H2>Pesquisa</H2>
-        <button type="submit">Enviar</button>
-    
-    </form>
-    
-    
+<label for="dinheiro1">Sua Renda</label>
+<select id="dinheiro1" name="dinheiro1" required>
+    <option value="menos">Menos que R$1500</option>
+    <option value="abaixo">Mais que R$1500</option>
+</select>
+<br>
+<br>
+             <div class="botao">
+       <button type="submit">Enviar</button>
     </div>
+        </form>
+     </div>
     
 </body>
 </html>
